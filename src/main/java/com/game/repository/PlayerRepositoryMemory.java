@@ -65,7 +65,6 @@ public class PlayerRepositoryMemory implements IPlayerRepository {
                 .skip((long) pageNumber * pageSize)
                 .limit(pageSize)
                 .collect(Collectors.toList());
-
     }
 
     @Override

@@ -68,12 +68,10 @@ public class PlayerService {
             player.setProfession(profession);
             needUpdate = true;
         }
-
         if (nonNull(banned)) {
             player.setBanned(banned);
             needUpdate = true;
         }
-
         if (needUpdate) {
             playerRepository.update(player);
         }
